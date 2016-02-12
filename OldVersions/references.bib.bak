@@ -1,0 +1,131 @@
+% This file was created with JabRef 2.7.2.
+% Encoding: Cp1252
+
+@ARTICLE{,
+  author = {Dirksen A, Dijkman JH, Madsen F, Stoel B, Hutchison DC, Ulrik CS,
+	Skovgaard LT, Kok-Jensen A, Rudolphus A, Seersholm N, Vrooman HA,
+	Reiber JH, Hansen NC, Heckscher T, Viskum K, Stolk J},
+  title = {A randomized clinical trial of alpha(1)-antitrypsin augmentation
+	therapy},
+  journal = {Ame},
+  year = {1999},
+  volume = {160 (5 pt1)},
+  pages = {1468-1472},
+  note = {http://www.ncbi.nlm.nih.gov/pubmed/10556107},
+  owner = {Ben},
+  timestamp = {2012.05.16}
+}
+
+@ARTICLE{,
+  author = {Kirby M, Mathew L, Wheatley A, Santyr GE, McCormack DG, Parraga G},
+  title = {Chronic Obstructive Pulmonary Disease: Longitudinal Hyperpolarized
+	3He MR Imaging},
+  journal = {Radiology},
+  year = {2010},
+  volume = {256},
+  pages = {280-289},
+  note = {http://radiology.rsna.org/content/256/1/280.full},
+  owner = {Ben},
+  timestamp = {2012.05.09}
+}
+
+@ARTICLE{,
+  author = {Ohara T, Hirai T, Sato S, Terada K, Kinose D, et al},
+  title = {Longitudinal study of airway dimensions in chronic obstructive pulmonary
+	disease using computed tomography},
+  journal = {Respirology},
+  year = {2008},
+  volume = {13 (3)},
+  pages = {372-378},
+  owner = {Ben},
+  timestamp = {2012.05.10}
+}
+
+@ARTICLE{,
+  author = {Parr DG, Sevenoaks M, Deng C, Stoel BC, Stockley RA},
+  title = {Detection of emphysema progression in alpha 1-antitrypsin deficiency
+	using CT densitometry; Methodological advances},
+  journal = {Respiratory Research},
+  year = {2008},
+  volume = {9(1)},
+  note = {http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2287169/},
+  owner = {Ben},
+  timestamp = {2012.05.16}
+}
+
+@ARTICLE{,
+  author = {Remy-Jardin M, Edme JL, Boulenquez C, Remy J, Mastora I, Sobaszek
+	A},
+  title = {Longitudinal follow-up study of smoker's lung with thin-section CT
+	in correlation with pulmonary function tests},
+  journal = {Radiology},
+  year = {2002},
+  volume = {222 (1)},
+  pages = {261-270},
+  note = {http://www.ncbi.nlm.nih.gov/pubmed/11756735},
+  owner = {Ben},
+  timestamp = {2012.05.12}
+}
+
+@ARTICLE{,
+  author = {Soejima K, Yamaguchi K, Kohda E, Takeshita K, Ito Y, et al},
+  title = {Longitudinal Follow-up Study of Smoking-induced Lung Density Changes
+	by High-resolution Computed Tomography},
+  journal = {American Journal of Respiratory and Critical Care Medicine},
+  year = {2000},
+  volume = {161 (4)},
+  pages = {1264-1273},
+  owner = {Ben},
+  timestamp = {2012.05.10}
+}
+
+@ARTICLE{,
+  author = {Stolk J, Ng WH, Bakker ME, Reiber JH, Rabe KF, Putter H, Stoel BC},
+  title = {Correlation between annual change in health status and computer tomography
+	derived lung density in subjects with alpha1-antitrypsin deficiency},
+  journal = {Thorax},
+  year = {2003},
+  volume = {58 (12)},
+  pages = {1027-1030},
+  note = {http://www.ncbi.nlm.nih.gov/pubmed/14645966},
+  owner = {Ben},
+  timestamp = {2012.05.16}
+}
+
+@ARTICLE{,
+  author = {Stolk J, Putter H, Bakker EM, Shaker SB, Parr DG, Piitulainen E,
+	Russi EW, Grebski E, Dirksen A, Stockley RA, Reiber JH, Stoel BC},
+  title = {Progression parameters for emphysema: a clinical investigation},
+  journal = {Respiratory Medicine},
+  year = {2007},
+  volume = {101 (9)},
+  pages = {1924-1930},
+  note = {http://www.ncbi.nlm.nih.gov/pubmed/17644366},
+  owner = {Ben},
+  timestamp = {2012.05.16}
+}
+
+@ARTICLE{,
+  author = {Tanabe N, Muro S, Hirai T, Oguma T, Terada K, Marumo S, Kinose D,
+	Ogawa E, Hoshino Y, Mishima M},
+  title = {Impact of Exacerbations on Emphysema Progression in Chronic Obstructive
+	Pulmonary Disease},
+  journal = {American Journal of Respiratory and Critical Care Medicine},
+  year = {2011},
+  volume = {183 (12)},
+  pages = {1653-1659},
+  note = {http://ajrccm.atsjournals.org/content/183/12/1653.short},
+  owner = {Ben},
+  timestamp = {2012.05.16}
+}
+
+@comment{jabref-meta: selector_review:}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
