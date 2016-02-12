@@ -1,0 +1,14 @@
+
+# Abstract
+
+__Purpose:__ Propose a methodologic framework for quantitative assessment of longitudinal pulmonary ventilation image data using hyperpolarized helium-3 (3He) for magnetic resonance imaging (MRI), including novel image processing and statistical analysis procedures for generating localized correlation maps based on effect(s) of interest.
+
+__Methods:__ Eight patients with cystic fibrosis were imaged using simultaneous hyperpolarized 3He and conventional 1H MRI every 2 weeks for 5 total time points in an experimental drug therapy study. To quantify patient-specific local treatment effects, multivariate (ie, 1H/3He) patient-specific atlases were constructed directly from longitudinal data. Probabilistic segmentation of the four dimensional (4-D) longitudinal image volume was used to yield normalized expected ventilation intensity values. Subsequent voxelwise regression analysis was used to determine local coherence with the proposed treatment effect hypothesis.
+
+__Results:__ Image maps were generated in the template space for each patient, showing areas of positive and negative correlation. Summing of respective regional volumes provided estimates of global effects of drug therapy, whereas the correlation image maps provided complementary information regarding local effects.
+
+__Conclusion:__ Using the proposed framework facilitates longitudinal assessment of pulmonary ventilation images. The proposed image analysis work flow appropriately modulates image data for subsequent statistical analysis yielding correlation maps that provide important regional information.
+
+__Keywords:__ cystic fibrosis; helium; respiratory function tests; magnetic resonance imaging (MRI)
+
+\clearpage

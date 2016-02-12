@@ -1,0 +1,61 @@
+
+# Methods
+
+## Cystic Fibrosis Treatment Image Data
+
+Hyperpolarized 3He MRI was evaluated as a clinical outcome measure in a single blind, placebo-controlled, Phase 2 investigational CF trial (www.clinicaltrials.gov identifier: NCT01161537). Patients or parents/guardians provided written informed consent, and patients younger than 18 years provided assent. The study protocol, informed consent, and other necessary documents were approved by an independent ethics committee or institutional review board for each study site before initiation of the study. This study was conducted in accordance with Good Clinical Practice (GCP) as described in the International Conference on Harmonization (ICH) Guideline E6, Good Clinical Practice, Consolidated Guidance (April 1996). The ICH GCP guideline is consistent with the World Medical Assembly Declaration of Helsinki.
+
+The eight patients used in this analylsis were aged 12 years and older with CF, with a G551D mutation on at least one allele and a percent predicted FEV1 of at least 40. Patients underwent spirometry and hyperpolarized 3He MRI every 2 weeks for 8 weeks (days 0, 14, 28, 42, and 56). Drug dosing consisted of a placebo lead-in from days 0 to 14 and treatment from days 14 to 42 (28 days), followed by a placebo washout period from days 42 to 56 (14 days).
+
+## Image Acquisition
+
+The 3He gas was polarized using a prototype commercial system (Magnetic Imaging Technologies Inc.; Durham, NC, USA), and polarizations between 20% and 40% were achieved. For each 3He MR acquisition, a 1- or 2-liter plastic bag (Jensen Inert Products; Coral Springs, FL, USA) was filled with 300 cc to 600 cc of hyperpolarized 3He and enough nitrogen to total approximately one third of the patient’s forced vital capacity (FVC). The patient inhaled the hyperpolarized 3He through a small plastic tube attached to the bag containing the gas. Three-dimensional (3-D) image sets of the lung utilizing 3He MRI and MRI using hydrogen proton signals (1H) were acquired during a single breath hold, using a 1.5T whole-body MRI system (Avanto; Siemens Healthcare, Malvern, PA, USA) and a linearly polarized transmit/receive radiofrequency coil tuned to the 3He frequency (Rapid Biomedical; Rimpar, Germany). The 3-D true fast imaging with steady-state free precession (TrueFISP) 3He and 1H MRI acquisitions comprised the following parameters: repetition time (TR)/echo time (TE) 1.9/0.8 ms (3He) or 1.8/0.7 ms (1H), flip angle 9 degrees, and isotropic 3.9-mm spatial resolution. Elliptical k-space sampling and partial Fourier were used for both methods, resulting in a total breath-hold time of approximately 12 seconds.
+
+## Image Analysis
+
+Analysis of longitudinal data (i.e., the time points) comprises the following basic steps: multimodal atlas construction for each patient, intensity normalization and bias correction across all time points, four-dimensional (4-D) ventilation-based segmentation, and voxelwise regression analysis, with the simplified hypothesis treatment effect. Each step of the 4-D work flow is detailed below. All software described in this work is available as an open source from the Advanced Normalization Tools (ANTs) repository (www.picsl.upenn.edu/ANTs).
+
+## Multivariate Template Construction
+
+Patient-specific templates were generated directly from the image data. Using the 3He and 1H data for each of the 5 time points as input, generation of the patient-specific template can be intuitively understood as iterating between averaging the current set of aligned images to create an estimate of the template, then to registering the images to that template estimate (and repeating for a given number of iterations). More technically, the symmetric normalization pairwise registration algorithm and an optimized Laplacian sharpening/averaging of the template estimate form the core of what is denoted as the symmetric group normalization algorithm for template construction. Given the set of 5 time-point 1H/3He aligned image pairs from a single patient, denoted as $\left\{I_1^{1H}, I_1^{3He}, \ldots, I_5^{1H}, I_5^{3He} \right\}$, template generation involved finding the following: the set of paired diffeomorphic transformations,
+$\left\{\left(\phi_1,\phi_1^{-1}\right),\ldots, \left(\phi_5,\phi_5^{-1}\right)\right\}$;
+the optimal multimodal template appearance, $J^{1H}$ and $J^{3He}$; and the corresponding coordinate system, $\Psi(x)$, which minimizes the following cost function:
+
+$$
+\sum_{m=1}^5
+\left[
+D\left(\Psi(x),\phi_1^m(x,1)\right) +
+\Pi_1\left(I_m^{1H}\left(\phi_2^m(x,0.5)\right),J^{1H}\left(\phi_1^m(x,0.5)\right)\right) +
+\Pi_2\left(I_m^{3He}\left(\phi_2^m(x,0.5)\right),J^{3He}\left(\phi_1^m(x,0.5)\right)\right)
+\right]
+$$
+
+wherein $D$ is the diffeomorphic shape distance,
+
+$$ D\left(\phi(x,0),\phi(x,1)\right) = \int_0^1 \| v(x,t) \|_L dt,$$
+
+(dependent on the choice of linear operator, $L$, and $v$ is the velocity field), and
+
+$$v\left(\phi(x,t)\right) = \frac{d\phi(x,t)}{dt}, \,\,\,\, \phi(x,0)=x.$$
+
+wherein $\Pi$ is the choice of similarity metric, calculated in the virtual domain midway between each individual modality image and the current estimate of the corresponding template. Diffeomorphic transformations are differentiable mappings with differentiable inverses. In the context of image registration, diffeomorphic transformations ensure the existence of biologically plausible inverse mappings whereby a topology-preserving mapping from image $I$ to $J$ is also accompanied by a topology-preserving mapping from image $J$ to $I$.  
+
+Atlas generation for each patient produced patient-specific 1H and 3He template images constituting a mean shape or appearance model of the image data for all 5 time points. In addition, each time point image was spatially normalized to the template space. These aligned data were subsequently bias field corrected and intensity normalized in preparation for 4-D segmentation (described in the next section).
+
+## Longitudinal Ventilation-Based Segmentation
+
+Preprocessing of images included suppression of inhomogeneity artifacts through the application of the N4 bias correction algorithm (28) to each individual image. This step was followed by intensity normalization, wherein the intensities of all 5 time point images were normalized to a single intensity range. Using the algorithm of Nyul et al. [@Nyul:2000aa], the intensity range in each image (denoted as the "source") from time points 2 through 5 was matched to the intensity range in the image of time point 1 (denoted as the "reference") by selecting 5 histogram match points distributed evenly across the intensity range in both images. Each match point in the “source” histogram was assigned the intensity value of the corresponding "target" point, with linear scaling performed between match points. Only 5 match points were employed, to avoid excessive intensity distortion.
+
+Following intensity correction and normalization, the image volumes from each time point were collated into a single spatio-temporal image, which was then segmented into 4 ventilation classes using the Atropos segmentation tool. The application of Atropos to pulmonary ventilation images was described in detail by Tustison et al. [@Tustison:2011aa]. Briefly, an expectation-maximization algorithm was used to optimize the class membership of each voxel, while a Markov random field priori was used to modulate such optimization by taking into account neighboring voxel class membership. For this study, a pixel was described by 1 of 4 categories representing degree of ventilation.
+
+Extension to 4-D was straightforward, with the optimization being practically identical to the 3-D case. The only variation was the determination of how much the neighboring pixels in time should be taken into account. Based on preliminary work, it was determined that omitting any temporal neighbor considerations produced the best results, and this approach minimized the bias in the longitudinal analysis by not favoring a static treatment effect model.
+
+## Statistical Analysis
+
+Output of the 4-D segmentation process included the posterior probability images that indicated the probability that a particular pixel belongs to a particular ventilation category. These posterior probability images were used to produce a standard ventilation scale for each image. These scaled, expected ventilation, $EV$, images were calculated as follows:
+
+$$EV(x) = \sum_{m=1}^M m \times \mathrm{Pr}\left(m|I(x)\right)$$
+
+wherein $M$ is the total number of labels (as described above, we used the label set $\left\{1, 2, 3, 4\right\}$ to describe the ventilation classes), and $\mathrm{Pr}\left(m|I(x)\right)$ was the posterior probability at spatial location $x$ (i.e., the probability that voxel $x$ has label $m$, given its intensity value $I(x)$).
+
+To account for any residual registration misalignments, the expected ventilation maps were smoothed prior to voxelwise regression. Correlation was then performed longitudinally at each voxel with the simplified treatment hypothesis.

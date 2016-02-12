@@ -1,0 +1,10 @@
+
+# Discussion
+
+Increased use of imaging for pulmonary longitudinal studies will require computational techniques to quantify and visualize spatial data in both local and global terms. A framework has been presented here for data preparation in future single-patient longitudinal studies whereby multivariate template construction results in longitudinal alignment. Results were presented using a unique cohort of patients with CF imaged at 5 discrete time points while undergoing various stages of drug treatment.
+
+For the analysis of this work, patient-specific templates were generated directly from the image data. Given the variability in lung shape across populations and the lack of publicly available lung atlases, generating population- or patient-specific templates enhanced the accuracy of the longitudinal analysis. Furthermore, the voxel-based longitudinal analysis technique used in this study enables voxelwise statistical regression for determining spatial correlation with expected treatment effects. This provides a new visualization and quantitative technique for exploring clinical hypotheses regarding changes in lung function.
+
+In conclusion, these preliminary results demonstrate the potential utility of the proposed framework for providing regional information concerning such pulmonary research topics as disease progression or response to treatment. The preprocessing steps of template building, intensity normalization, inhomogeneity correction, and segmentation are all available in the ANTs distribution. Furthermore, the R statistical project, which was used to perform statistical analysis, is available at www.r-project.org. Hence, the processing pipeline is readily available as an open source of information to researchers who desire to participate in and extend this work.
+
+\clearpage

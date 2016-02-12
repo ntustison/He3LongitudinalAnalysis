@@ -1,0 +1,21 @@
+
+# Comments
+
+1. _Please provide degree or qualification for this author?_   Done.
+2. _Please confirm target journal?_ To be determined.
+3. _Authors please validate affiliations._ Done.
+4. _Authors please validate address and details._  Done.  Changed to current address.
+5. _Please provide [fax number]._  I don't have one.
+6. _For how long?_  The Vertex people should have this information.
+7. _These references have not been provided. Please provide references._  These are fine.
+8. _Please confirm this is correct._ The Vertex people should have this information.
+9. _What were the number of patients? Was it 8 as specified in the abstract?_  Yes, that was the number of subjects given to me to be used for the analysis.
+10. _What is the treatment? According to ref 25 it is ivacaftor? Should this be stated?_  This should be clarified with the Vertex people.
+11. _The equations listed here are cut and pasted from a pdf document of the manuscript. Please validate these are correct? Do the authors have a cleaner version of these equations we could insert?_  Done.
+12. _Please also confirm that any of the equation symbols within the text are accurate (font, etc)._  Done.
+13. _The equations listed here are cut and pasted from a pdf document of the manuscript. Please validate these are correct? Do the authors have a cleaner version of these equations we could insert?_  See above.
+14. _The equations listed here are cut and pasted from a pdf document of the manuscript. Please validate these are correct? Do the authors have a cleaner version of these equations we could insert?_  See above.
+15. _The equations listed here are cut and pasted from a pdf document of the manuscript. Please validate these are correct? Do the authors have a cleaner version of these equations we could insert?_  See above.
+16. _Please indicate any potential financial conflicts related to this manuscript, such as: advisory board, paid consultant, honoraria, research grants received by you or your affiliation, speakers’ bureau, owning stock in company, or employment; include funding source for each disclosure._  To be done.
+
+\clearpage

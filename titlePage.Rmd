@@ -1,0 +1,41 @@
+
+# Voxel-Based Longitudinal Analysis of Pulmonary Ventilation Magnetic Resonance Imaging
+
+Nicholas J. Tustison, DSc,^1^
+Benjamin Contrella, MD,^1^
+Talissa A. Altes, MD,^2^
+Brian B. Avants, PhD,^3^
+Eduard E. de Lange, MD,^1^
+John P. Mugler, III, PhD^1^
+
+1. Department of Radiology and Medical Imaging, University of Virginia, Charlottesville, Virginia, USA
+2. Department of Radiology, University of Missouri, Columbia, Missouri, USA
+3. Penn Image Computing and Science Laboratory, University of Pennsylvania, Philadelphia, Pennsylvania, USA
+\
+\
+\
+\
+\
+\
+\
+\
+
+__Address for correspondence:__  
+Nicholas J. Tustison  
+4173 Cardamon Circle  
+Corona, CA  92883  
+Phone: 540-383-2719  
+E-mail: ntustison@virginia.edu  
+\
+\
+
+__Funding disclosure__: This study was sponsored by Vertex Pharmaceuticals Incorporated.
+Editorial support was provided by Infusion Communications, Haddam, CT and was funded
+by Vertex Pharmaceuticals Incorporated. No author received an honorarium or other
+form of financial support related to the development of this manuscript.
+
+<!--
+Running head: Voxel-Based Longitudinal Analysis of Pulmonary Ventilation MRI
+-->
+
+\clearpage
